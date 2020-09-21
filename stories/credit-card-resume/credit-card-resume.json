@@ -1,0 +1,46 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "credit-card-resume",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "amount",
+          "description": "Card amount"
+        },
+        {
+          "name": "expiration",
+          "description": "Card expiration"
+        },
+        {
+          "name": "lastmovement",
+          "description": "Card last movement"
+        },
+        {
+          "name": "logo",
+          "description": "Card logo"
+        },
+        {
+          "name": "name",
+          "description": "Card onwer's name"
+        },
+        {
+          "name": "number",
+          "description": "Card number"
+        },
+        {
+          "name": "progress",
+          "description": "Card amount progress"
+        },
+        {
+          "name": "type",
+          "description": "Card type"
+        }
+      ]
+    }
+  ]
+}
