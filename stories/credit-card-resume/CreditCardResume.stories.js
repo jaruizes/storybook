@@ -4,17 +4,12 @@ import { setCustomElements } from '@storybook/web-components';
 import customElements from './credit-card-resume.json';
 setCustomElements(customElements);
 
-wcloader('http://microfrontends-cdn.s3-website.eu-west-2.amazonaws.com/web-components/credit-card-resume/credit-card-resume.esm.js');
+wcloader('http://microfrontends-cdn.s3-website.eu-west-2.amazonaws.com/web-components/credit-card-resume/credit-card-resume.esm.js', true);
 
 export default {
   title: 'Cards/Credit Card Resume',
   component: 'credit-card-resume',
   argTypes: {
-    name: {
-      control: {
-        type: 'text'
-      }
-    },
     number: {
       control: {
         type: 'text',
@@ -32,12 +27,9 @@ export default {
         type: 'text'
       }
     },
-    progress: {
+    limit: {
       control: {
-        type: 'range',
-        min: 0,
-        max: 100,
-        step: 10
+        type: 'text'
       }
     }
   },
@@ -47,12 +39,11 @@ export default {
 };
 
 
-const CreditCardTemplate = ({ name, number, lastMovement, amount, progress, type }) => `
-    <credit-card-resume name="${name}"
-                        number="${number}"
+const CreditCardTemplate = ({ number, lastMovement, amount, type, limit }) => `
+    <credit-card-resume number="${number}"
                         lastmovement="${lastMovement}"
                         amount="${amount}"
-                        progress="${progress}"
+                        limit="${limit}"
                         type="${type}">
       </credit-card-resume>
 `;
@@ -60,11 +51,11 @@ const CreditCardTemplate = ({ name, number, lastMovement, amount, progress, type
 export const DebitCard = CreditCardTemplate.bind();
 DebitCard.storyname = "Debit Card Resume";
 DebitCard.args = {
-  name: 'Jose Miguel González del Campo',
-  number: 'XXXX XXXX XXXX XXXX',
-  lastmovement: '3 days ago',
-  amount: '500 €',
-  progress: '50'
+  number: 'XXXXXXXXXXXXXXXX',
+  lastMovement: '3 days ago',
+  amount: '500',
+  limit: '1000',
+  type: '0'
 };
 
 export const CreditCard = CreditCardTemplate.bind();

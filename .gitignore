@@ -20,7 +20,7 @@ log.txt
 node_modules/
 $RECYCLE.BIN/
 
-storybook-web/
+storybook/
 
 .DS_Store
 Thumbs.db

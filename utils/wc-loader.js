@@ -1,6 +1,9 @@
-export const wcloader = (url) => {
+export const wcloader = (url, isModule) => {
   let script = document.createElement('script');
-  script.setAttribute('type','module');
+  if (isModule) {
+    script.setAttribute('type', 'module');
+  }
+
   script.setAttribute('src',url);
 
   document.head.appendChild(script);

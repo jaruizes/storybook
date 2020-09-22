@@ -4,7 +4,7 @@ import { setCustomElements } from '@storybook/web-components';
 import customElements from './credit-card.json';
 setCustomElements(customElements);
 
-wcloader('http://microfrontends-cdn.s3-website.eu-west-2.amazonaws.com/web-components/credit-card/credit-card.esm.js');
+wcloader('http://microfrontends-cdn.s3-website.eu-west-2.amazonaws.com/web-components/credit-card/credit-card.esm.js', true);
 
 export default {
   title: 'Cards/Credit-Card',

@@ -13,28 +13,16 @@
           "description": "Card amount"
         },
         {
-          "name": "expiration",
-          "description": "Card expiration"
-        },
-        {
           "name": "lastmovement",
           "description": "Card last movement"
         },
         {
-          "name": "logo",
-          "description": "Card logo"
-        },
-        {
-          "name": "name",
-          "description": "Card onwer's name"
+          "name": "limit",
+          "description": "Card limit"
         },
         {
           "name": "number",
           "description": "Card number"
-        },
-        {
-          "name": "progress",
-          "description": "Card amount progress"
         },
         {
           "name": "type",
